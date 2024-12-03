@@ -14,3 +14,18 @@ class User(models.Model):
 
     def __str__(self):
         return self.email
+
+
+class table1(models.Model):
+    author = models.CharField(max_length=200)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.author
+
+class table2(models.Model):
+    car = models.CharField(max_length=50)
+    driver = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.driver
